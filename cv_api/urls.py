@@ -9,6 +9,11 @@ router.register('skills', views.SkillsViewSet, basename='skills')
 router.register('skill-type', views.SkillTypeViewSet, basename='skill-type')
 router.register('personal-information', views.PersonalInformationViewSet, basename='personal-information')
 router.register('languages', views.LanguagesViewSet, basename='languages')
+router.register('emails-from-contacts', views.EmailsFromContactsViewSet, basename='emails-from-contacts')
+router.register('blog', views.BlogViewSet, basename='blog')
+router.register('category', views.CategoryViewSet, basename='category')
+router.register('tag', views.TagViewSet, basename='tag')
+router.register('comment', views.CommentViewSet, basename='comment')
 
 urlpatterns = []
 

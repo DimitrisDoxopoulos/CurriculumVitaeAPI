@@ -42,3 +42,33 @@ class LanguagesSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Languages
         fields = '__all__'
+
+
+class EmailsFromContactsSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.EmailsFromContacts
+        fields = '__all__'
+
+
+class BlogSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.BlogPost
+        fields = '__all__'
+
+
+class CategorySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.Category
+        fields = '__all__'
+
+
+class TagSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.Tag
+        fields = '__all__'
+
+
+class CommentSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.Comment
+        fields = '__all__'
