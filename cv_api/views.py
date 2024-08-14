@@ -36,27 +36,8 @@ class LanguagesViewSet(viewsets.ModelViewSet):
     queryset = models.Languages.objects.all()
     serializer_class = serializers.LanguagesSerializer
 
-
-class BlogViewSet(viewsets.ModelViewSet):
-    queryset = models.BlogPost.objects.all()
-    serializer_class = serializers.BlogSerializer
-
-
 class EmailsFromContactsViewSet(viewsets.ModelViewSet):
     queryset = models.EmailsFromContacts.objects.all()
     serializer_class = serializers.EmailsFromContactsSerializer
 
 
-class CategoryViewSet(viewsets.ModelViewSet):
-    queryset = models.Category.objects.all()
-    serializer_class = serializers.CategorySerializer
-
-
-class TagViewSet(viewsets.ModelViewSet):
-    queryset = models.Tag.objects.all()
-    serializer_class = serializers.TagSerializer
-
-
-class CommentViewSet(viewsets.ModelViewSet):
-    queryset = models.Comment.objects.all()
-    serializer_class = serializers.CommentSerializer

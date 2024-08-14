@@ -21,7 +21,8 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('cv_api.urls')),
+    path('api/cv/', include('cv_api.urls')),
+    path('api/blog/', include('blog.urls')),
     path('accounts/', include('django.contrib.auth.urls')),
 ]
 

@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'corsheaders',
     # 'cv_api',
     'cv_api.apps.CvApiConfig',
+    'blog.apps.BlogConfig',
 ]
 
 MIDDLEWARE = [
